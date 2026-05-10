@@ -7,7 +7,9 @@ import NavArticle from "../components/layout/NavArticle.astro";
 import ListPosts from "../components/blog/ListPosts.astro";
 import NavigationArticles from "../components/layout/NavigationArticles.astro";
 import Share from "../components/ui/Share.astro";
+import { withBase } from "../utils/withBase";
 const { frontmatter } = Astro.props;
+const imageSrc = frontmatter.image?.url ? withBase(frontmatter.image.url) : undefined;
 const currentUrl = `${Astro.site}${Astro.url.pathname}`;
 const tweetText = encodeURIComponent(
   `"${frontmatter.title}" - by ${frontmatter.author} | EFEELE`
@@ -114,7 +116,7 @@ import Heading from "../components/ui/Heading.astro";
           frontmatter.image?.url && (
             <img
               class="w-full rounded-xl"
-              src={frontmatter.image.url}
+              src={imageSrc}
               alt={frontmatter.image.alt || "Article image"}
             />
           )

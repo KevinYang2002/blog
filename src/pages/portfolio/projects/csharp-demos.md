@@ -5,7 +5,7 @@ pubDate: 2024-02-06
 description: 'A collection of C# methods demonstrating parameters, return values, and overloading.'
 languages: ["csharp", "dotnet"]
 image:
-  url: "/images/projects/csharp.webp"
+  url: "/images/imagedefault.webp"
   alt: "C# Methods Demo console application."
 ---
 

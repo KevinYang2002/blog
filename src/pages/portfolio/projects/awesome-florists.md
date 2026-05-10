@@ -5,7 +5,7 @@ pubDate: 2024-04-12
 description: 'A multi-page responsive flower shop website built with HTML5 and CSS3.'
 languages: ["html5", "css3", "javascript"]
 image:
-  url: "/images/projects/flowers.webp"
+  url: "/images/imagedefault.webp"
   alt: "Awesome Florists flower shop website."
 ---
 

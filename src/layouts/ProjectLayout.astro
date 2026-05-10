@@ -5,8 +5,10 @@ import Capsule from "../components/ui/Capsule.astro";
 import Heading from "../components/ui/Heading.astro";
 import NavArticle from "../components/layout/NavArticle.astro";
 import Contact from "../components/portfolio/Contact.astro";
+import { withBase } from "../utils/withBase";
 const { frontmatter } = Astro.props;
 
+const imageSrc = frontmatter.image?.url ? withBase(frontmatter.image.url) : undefined;
 ---
 
 
@@ -43,7 +45,7 @@ const { frontmatter } = Astro.props;
           frontmatter.image?.url && (
             <img
               class="w-full rounded-xl"
-              src={frontmatter.image.url}
+              src={imageSrc}
               alt={frontmatter.image.alt || "Article image"}
             />
           )

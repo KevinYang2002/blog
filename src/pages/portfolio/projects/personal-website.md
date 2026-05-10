@@ -5,7 +5,7 @@ pubDate: 2026-05-10
 description: 'This portfolio website, built with Astro and TailwindCSS.'
 languages: ["astro", "tailwind", "javascript"]
 image:
-  url: "/images/projects/portfolio.webp"
+  url: "/images/imagedefault.webp"
   alt: "Personal portfolio website."
 ---
 

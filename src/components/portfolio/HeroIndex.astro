@@ -5,6 +5,7 @@ import Tools from "../portfolio/Tools.astro";
 import { Icon } from "astro-icon/components";
 import Hobbies from "../portfolio/Hobbies.astro";
 import { getCollection } from "astro:content";
+import { withBase } from "../../utils/withBase";
 
 const [staticData] = await getCollection("staticData");
 const {
@@ -13,12 +14,14 @@ const {
   profileImage,
   profileName,
   profileTitle,
+  profileDescription,
   email,
   emailIconName,
   github,
   portfolioImage,
   contactSectionButtonText,
 } = staticData.data;
+
 ---
 
 <section
@@ -43,7 +46,7 @@ const {
           <div class="relative z-20 flex w-full rounded-full bg-mint-900">
             <div
               class="w-full aspect-square rounded-full bg-center bg-cover"
-              style={`background-image: url(${profileImage})`}
+              style={`background-image: url(${withBase(profileImage)})`}
               aria-label={profileAlt}
             >
               <a
@@ -78,11 +81,7 @@ const {
           <span
             class="bg-linear-to-r from-riptide-500 to-mint-500 bg-clip-text font-black text-transparent dark:from-riptide-300 dark:to-mint-200"
             >{profileTitle}</span
-          > with <span
-            class="bg-linear-to-r from-riptide-500 to-mint-500 bg-clip-text font-black text-transparent dark:from-riptide-300 dark:to-mint-200"
-            >8 years of experience</span
-          >, passionate about development, technology, and coffee that sparks
-          ideas. I love bringing digital projects to life. 🚀☕
+          > — {profileDescription}
         </p>
 
         <div class="flex gap-4 max-sm:flex-col max-sm:items-center">
@@ -202,7 +201,7 @@ const {
         </p>
         <img
           class="relative left-0 z-0 mt-40 w-full object-cover transition-all ease-in-out duration-500 group-hover:rotate-2 group-hover:scale-185 max-xl:mt-28 max-lg:mt-10 max-sm:mt-0 max-md:scale-100 max-sm:scale-125 scale-180 max-md:group-hover:scale-105 before:bg-[radial-gradient(circle,rgba(13,188,130)_0,rgba(1,45,34)_100%)] before:absolute before:left-30 before:-bottom-0 before:h-[80%] before:aspect-square before:rounded-full before:blur-3xl before:opacity-80 before:-z-10 before:transition"
-          src={portfolioImage}
+          src={withBase(portfolioImage)}
           alt="View of two website interfaces with modern and dark design. The first screen shows the title 'Behind the Code' with a rocket and dark background, explaining the origin of a community software project. The second screen presents a platform for finding speakers, with an attractive design, expert photos, and a prominent search button."
           loading="lazy"
           width="480"

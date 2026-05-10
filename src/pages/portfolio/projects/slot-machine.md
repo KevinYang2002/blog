@@ -5,7 +5,7 @@ pubDate: 2024-02-12
 description: 'A console-based slot machine game built with C# and .NET.'
 languages: ["csharp", "dotnet"]
 image:
-  url: "/images/projects/slotmachine.webp"
+  url: "/images/imagedefault.webp"
   alt: "Slot Machine C# console game."
 ---
 
