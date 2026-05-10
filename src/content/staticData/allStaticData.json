@@ -1,0 +1,39 @@
+{
+  "profileImage": "/images/efeeleprofile.webp",
+  "profileAlt": "Kevin Yang - CS Student",
+  "profileLink": "/about-me",
+  "profileTitle": "CS Student",
+  "profileName": "Kevin Yang",
+  "github": "https://github.com/KevinYang2002",
+  "githubText": "Check out my GitHub",
+  "portfolioImage": "/images/portfolio.webp",
+  "email": "kevin@example.com",
+  "linkedin": "",
+  "instagram": "",
+  "youtube": "",
+  "alias": "Kevin",
+  "contactSectionTitle": "Interested in working together?",
+  "contactSectionSubtitle": "Let's connect and build something cool.",
+  "contactSectionButtonText": "Get in Touch",
+  "contactSectionButtonIcon": "paperplane",
+  "techsTitle": "TECH STACK",
+  "instagramIconName": "instagram",
+  "youtubeIconName": "youtube",
+  "githubIconName": "github",
+  "linkedinIconName": "linkedin",
+  "emailIconName": "envelope",
+  "hobbies": [
+    "Coding",
+    "Gaming",
+    "Music",
+    "Photography",
+    "Coffee",
+    "Movies"
+  ],
+  "pageTitle": "Kevin Yang | CS Student & Developer",
+  "pageDescription": "Computer Science student focused on web development. Building things for the web.",
+  "OGImage": {
+    "url": "/images/imagedefault.webp",
+    "alt": "Kevin Yang - CS Student and Web Developer portfolio"
+  }
+}
