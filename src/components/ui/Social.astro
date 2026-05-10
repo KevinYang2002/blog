@@ -9,9 +9,9 @@ interface Props {
 
 const { iconName, link, label = `Link to ${iconName}` } = Astro.props;
 
-// Validate required props
+// Skip rendering if link is empty
 if (!iconName || !link) {
-    throw new Error('Social component requires both iconName and link props');
+    return null;
 }
 ---
 

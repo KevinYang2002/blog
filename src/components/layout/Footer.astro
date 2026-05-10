@@ -56,26 +56,26 @@ const {
         iconName={emailIconName}
         label={`Send email to ${email}`}
       />
-      <Social
+      {instagram && <Social
         link={instagram}
         iconName={instagramIconName}
         label={`Visit ${alias} on Instagram`}
-      />
-      <Social
+      />}
+      {youtube && <Social
         link={youtube}
         iconName={youtubeIconName}
         label={`Visit ${alias} on YouTube`}
-      />
+      />}
       <Social
         link={github}
         iconName={githubIconName}
         label={`Visit ${alias} on GitHub`}
       />
-      <Social
+      {linkedin && <Social
         link={linkedin}
         iconName={linkedinIconName}
         label={`Visit ${alias} on LinkedIn`}
-      />
+      />}
     </div>
   </nav>
 </footer>

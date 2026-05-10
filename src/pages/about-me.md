@@ -1,5 +1,5 @@
 ---
-layout: /src/layouts/AboutLayout.astro
+layout: /src/layouts/MarkdownAbout.astro
 title: "About Me"
 ---
 
